@@ -1,0 +1,13 @@
+.agents/
+.claude/
+skills-lock.json
+index-v2.html
+index-v3.html
+index-v4.html
+styles-v2.css
+styles-v3.css
+styles-v4.css
+demande-detaillee-v3.html
+demande-rapide-v3.html
+__MACOSX/
+.DS_Store

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-en="Quick Request — Apex Vision Security">Demande rapide — Apex Vision Sécurité</title>
+    <meta name="description" content="Formulaire rapide de demande de soumission — Apex Vision Sécurité Inc., Montréal." data-en="Quick quote request form — Apex Vision Security Inc., Montréal." />
+    <meta name="theme-color" content="#0b0b0c" />
+    <link rel="icon" type="image/png" href="images/apex-logo-mark.png" />
+    <link rel="apple-touch-icon" href="images/apex-logo-mark.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles-v4.css" />
+    <script src="i18n.js" defer></script>
+</head>
+<body>
+
+    <a href="#main" class="skip-link">Aller au contenu principal</a>
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index-v4.html" class="logo" aria-label="Apex Vision Sécurité — Accueil">
+                <img src="images/apex-logo-mark.png" alt="" class="logo-mark-img" aria-hidden="true" />
+                <span class="logo-wordmark">
+                    <span class="wordmark-row">
+                        <span class="wm-apex">APEX</span><span class="wm-vision">VISION</span>
+                    </span>
+                    <span class="wordmark-sub">Security Inc.</span>
+                </span>
+            </a>
+
+            <nav class="primary-nav" aria-label="Navigation principale" data-en-aria-label="Main navigation">
+                <ul>
+                    <li><a href="index-v4.html#services" data-en="Services">Services</a></li>
+                    <li><a href="index-v4.html#approche" data-en="Approach">Approche</a></li>
+                    <li><a href="index-v4.html#temoignages" data-en="Testimonials">Témoignages</a></li>
+                    <li><a href="index-v4.html#contact" data-en="Contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <span class="version-pill" title="Version actuelle">
+                    <a href="demande-rapide-v3.html">v3</a><a href="demande-rapide-v4.html" class="version-active">v4</a>
+                </span>
+                <span class="lang-switch"><a href="?" data-lang="fr" class="lang-active">FR</a> · <a href="?lang=en" data-lang="en">EN</a></span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="form-page form-page--narrow">
+            <div class="container">
+
+                <nav class="form-breadcrumb" aria-label="Fil d'Ariane" data-en-aria-label="Breadcrumb">
+                    <a href="index-v4.html" data-en="Home">Accueil</a>
+                    <span class="crumb-sep">/</span>
+                    <span aria-current="page" data-en="Quick request">Demande rapide</span>
+                </nav>
+
+                <header class="section-head form-head">
+                    <div class="head-left">
+                        <span class="section-num">01</span>
+                        <span class="section-label" data-en="Quick request">Demande rapide</span>
+                    </div>
+                    <div class="head-right">
+                        <h1 class="section-title" data-en="We'll get back to you within 48&nbsp;h.">Reprise de contact en 48&nbsp;h.</h1>
+                        <p class="section-kicker" data-en="Five fields, one minute. We'll respond with an initial proposal.">Cinq champs, une minute. Nous revenons vers vous avec une proposition initiale.</p>
+                    </div>
+                </header>
+
+                <form class="apex-form" id="formRapide" data-form-type="rapide" data-return-url="index-v4.html" novalidate>
+                    <input type="hidden" name="botcheck" tabindex="-1" autocomplete="off" />
+
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend"><span class="legend-num">01</span> <span data-en="Contact details">Coordonnées</span></legend>
+                        <div class="form-grid">
+                            <div class="form-field form-field--full">
+                                <label for="contact" data-en="Contact name <span class=&quot;req&quot;>*</span>">Nom du contact <span class="req" aria-label="obligatoire">*</span></label>
+                                <input type="text" id="contact" name="contact" required autocomplete="name" />
+                            </div>
+                            <div class="form-field">
+                                <label for="tel" data-en="Phone <span class=&quot;req&quot;>*</span>">Téléphone <span class="req" aria-label="obligatoire">*</span></label>
+                                <input type="tel" id="tel" name="tel" required autocomplete="tel" placeholder="+1 514 …" />
+                            </div>
+                            <div class="form-field">
+                                <label for="email" data-en="Email <span class=&quot;req&quot;>*</span>">Courriel <span class="req" aria-label="obligatoire">*</span></label>
+                                <input type="email" id="email" name="email" required autocomplete="email" />
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend"><span class="legend-num">02</span> <span data-en="Service requested">Service souhaité</span></legend>
+                        <div class="form-grid">
+                            <div class="form-field form-field--full">
+                                <label for="service" data-en="Service type <span class=&quot;req&quot;>*</span>">Type de service <span class="req" aria-label="obligatoire">*</span></label>
+                                <select id="service" name="service" required>
+                                    <option value="" data-en="— Choose a service —">— Choisir un service —</option>
+                                    <option value="gardiennage" data-en="Guarding">Gardiennage</option>
+                                    <option value="surveillance" data-en="Surveillance">Surveillance</option>
+                                    <option value="evenementielle" data-en="Event security">Sécurité événementielle</option>
+                                    <option value="protection" data-en="Close protection">Protection rapprochée</option>
+                                    <option value="doorman" data-en="Doorman / Access control">Doorman / Contrôle d'accès</option>
+                                    <option value="valet" data-en="Valet service">Service de valet</option>
+                                    <option value="risques" data-en="Risk management">Gestion des risques</option>
+                                    <option value="autre" data-en="Other">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-field form-field--full">
+                                <label for="message" data-en="Message <span class=&quot;opt&quot;>(optional)</span>">Message <span class="opt">(optionnel)</span></label>
+                                <textarea id="message" name="message" rows="4" placeholder="Décrivez brièvement votre besoin…" data-en-placeholder="Briefly describe your need…"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <p class="form-required-note" data-en="<span class=&quot;req&quot;>*</span>&nbsp;Required fields"><span class="req">*</span>&nbsp;Champs obligatoires</p>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span data-en="Submit my request">Envoyer ma demande</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </form>
+
+                <p class="form-switch" data-en="Need more details? <a href=&quot;demande-detaillee-v4.html&quot;>Switch to detailed form →</a>">
+                    Besoin plus précis ? <a href="demande-detaillee-v4.html">Passer au formulaire détaillé →</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index-v4.html" class="logo logo-footer" aria-label="Apex Vision Sécurité">
+                    <img src="images/apex-logo-mark.png" alt="" class="logo-mark-img logo-mark-large" aria-hidden="true" />
+                    <span class="logo-wordmark wordmark-large">
+                        <span class="wordmark-row">
+                            <span class="wm-apex">APEX</span><span class="wm-vision">VISION</span>
+                        </span>
+                        <span class="wordmark-sub">Security Inc.</span>
+                    </span>
+                </a>
+                <p class="footer-tagline serif-italic" data-en="Your safety.<br><span class=&quot;accent&quot;>Our priority.</span>">Votre sécurité.<br /><span class="accent">Notre priorité.</span></p>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 Apex Vision Sécurité Inc.</span>
+                <span data-en="BSP licensed · All rights reserved">Permis BSP&nbsp;·&nbsp;Tous droits réservés</span>
+                <span class="footer-credit">Montréal</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="apex-form.js" defer></script>
+</body>
+</html>

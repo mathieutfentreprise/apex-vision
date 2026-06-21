@@ -1,0 +1,49 @@
+# Apex Vision Sécurité — Netlify configuration
+
+[build]
+  # Site statique pur — aucune commande de build
+  publish = "."
+
+# Racine → v4 (édition courante)
+[[redirects]]
+  from = "/"
+  to = "/index-v4.html"
+  status = 200
+  force = false
+
+# Pages "rapide" et "détaillée" — alias FR sans -v4
+[[redirects]]
+  from = "/demande-rapide"
+  to = "/demande-rapide-v4.html"
+  status = 200
+
+[[redirects]]
+  from = "/demande-detaillee"
+  to = "/demande-detaillee-v4.html"
+  status = 200
+
+# Headers de sécurité standards
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache long pour les assets immuables
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache modéré pour CSS/JS (auto-busted par déploiement)
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"

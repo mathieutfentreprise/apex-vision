@@ -1,0 +1,5 @@
+# Netlify — Apex Vision Sécurité
+# Racine du site → version v4 (édition courante)
+# Status 200 = rewrite : l'URL reste "/" pour le visiteur
+
+/    /index-v4.html    200
